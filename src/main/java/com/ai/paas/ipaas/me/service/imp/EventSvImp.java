@@ -154,8 +154,10 @@ public class EventSvImp implements IEventSv {
 		String container = "";
 		for(FrameWork framework :resp.getFrameworks()){
 			for(Executor executor:framework.getExecutors()){
-				if(executor.getId().equals(taskId))
+				if(executor.getId().equals(taskId)){
 					container = executor.getContainer();
+					break;
+				}
 			}
 		}
 		
