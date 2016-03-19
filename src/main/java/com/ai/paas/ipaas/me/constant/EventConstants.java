@@ -5,9 +5,10 @@ public class EventConstants {
 	/**
 	 * 消息队列的URL
 	 */
-	public static final String MESSAGE_SERVER = "http://{0}/put?topic={1}";
+	public static final String MESSAGE_SERVER = "http://{0}/put?topic={1}&channel={2}";
 	public static final String MESSAGE_SERVER_HOST = "NSQ_HOST";
 	public static final String MESSAGE_SERVER_TOPIC = "TOPIC";
+	public static final String MESSAGE_SERVER_CHANNEL = "CHANNEL";
 	
 	
 	

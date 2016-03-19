@@ -60,7 +60,8 @@ public class EventSvImp implements IEventSv {
 						EventConstants.MESSAGE_SERVER,
 						new String[] {
 								ConfUtil.getProperty(EventConstants.MESSAGE_SERVER_HOST),
-								ConfUtil.getProperty(EventConstants.MESSAGE_SERVER_TOPIC) });
+								ConfUtil.getProperty(EventConstants.MESSAGE_SERVER_TOPIC),
+								ConfUtil.getProperty(EventConstants.MESSAGE_SERVER_CHANNEL)});
 		HttpUtil.sendMessageToEndPoint(url, message);
 	}
 
